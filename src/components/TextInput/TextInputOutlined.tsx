@@ -372,7 +372,7 @@ const Outline = ({
       {
         backgroundColor,
         borderRadius: theme.roundness,
-        borderWidth: focused ? 2 : 1,
+        borderWidth: focused ? 1.5 : 0.5,
         borderColor: hasActiveOutline ? activeColor : outlineColor,
       },
     ]}
