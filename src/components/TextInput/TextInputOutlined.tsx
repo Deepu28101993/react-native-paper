@@ -166,7 +166,7 @@ const TextInputOutlined = ({
 
   const pad = calculatePadding(paddingSettings);
 
-  const paddingOut = adjustPaddingOut({ ...paddingSettings, pad });
+  //const paddingOut = adjustPaddingOut({ ...paddingSettings, pad });
 
   const baseLabelTranslateY =
     -labelHalfHeight - (topPosition + OUTLINE_MINIMIZED_LABEL_Y_OFFSET);
