@@ -31,7 +31,7 @@ import {
   calculateLabelTopPosition,
   calculateInputHeight,
   calculatePadding,
-  adjustPaddingOut,
+  //adjustPaddingOut,
   Padding,
   interpolatePlaceholder,
   calculateOutlinedIconAndAffixTopPosition,
@@ -164,7 +164,7 @@ const TextInputOutlined = ({
     ) as Padding,
   };
 
-  const pad = calculatePadding(paddingSettings);
+  //const pad = calculatePadding(paddingSettings);
 
   //const paddingOut = adjustPaddingOut({ ...paddingSettings, pad });
 
