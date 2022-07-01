@@ -320,7 +320,7 @@ const TextInputOutlined = ({
               !multiline || (multiline && height)
                 ? { height: inputHeight }
                 : {},
-              paddingOut,
+              //paddingOut,
               {
                 ...font,
                 fontSize,
