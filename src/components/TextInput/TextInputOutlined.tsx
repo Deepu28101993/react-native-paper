@@ -31,7 +31,7 @@ import {
   calculateLabelTopPosition,
   calculateInputHeight,
   calculatePadding,
-  //adjustPaddingOut,
+  adjustPaddingOut,
   Padding,
   interpolatePlaceholder,
   calculateOutlinedIconAndAffixTopPosition,
@@ -164,9 +164,9 @@ const TextInputOutlined = ({
     ) as Padding,
   };
 
-  //const pad = calculatePadding(paddingSettings);
+  const pad = calculatePadding(paddingSettings);
 
-  //const paddingOut = adjustPaddingOut({ ...paddingSettings, pad });
+  const paddingOut = adjustPaddingOut({ ...paddingSettings, pad });
 
   const baseLabelTranslateY =
     -labelHalfHeight - (topPosition + OUTLINE_MINIMIZED_LABEL_Y_OFFSET);
@@ -320,7 +320,7 @@ const TextInputOutlined = ({
               !multiline || (multiline && height)
                 ? { height: inputHeight }
                 : {},
-              //paddingOut,
+              paddingOut,
               {
                 ...font,
                 fontSize,
