@@ -30,8 +30,8 @@ import {
 import {
   calculateLabelTopPosition,
   calculateInputHeight,
-  calculatePadding,
-  adjustPaddingOut,
+  //calculatePadding,
+  //adjustPaddingOut,
   Padding,
   interpolatePlaceholder,
   calculateOutlinedIconAndAffixTopPosition,
@@ -108,7 +108,7 @@ const TextInputOutlined = ({
   }
 
   const labelScale = MINIMIZED_LABEL_FONT_SIZE / fontSize;
-  const fontScale = MAXIMIZED_LABEL_FONT_SIZE / fontSize;
+  //const fontScale = MAXIMIZED_LABEL_FONT_SIZE / fontSize;
 
   const labelWidth = parentState.labelLayout.width;
   const labelHeight = parentState.labelLayout.height;
@@ -147,26 +147,26 @@ const TextInputOutlined = ({
     console.warn('Currently we support only numbers in height prop');
   }
 
-  const paddingSettings = {
-    height: height ? +height : null,
-    labelHalfHeight,
-    offset: LABEL_PADDING_TOP,
-    multiline: multiline ? multiline : null,
-    dense: dense ? dense : null,
-    topPosition,
-    fontSize,
-    lineHeight,
-    label,
-    scale: fontScale,
-    isAndroid: Platform.OS === 'android',
-    styles: StyleSheet.flatten(
-      dense ? styles.inputOutlinedDense : styles.inputOutlined
-    ) as Padding,
-  };
+//   const paddingSettings = {
+//     height: height ? +height : null,
+//     labelHalfHeight,
+//     offset: LABEL_PADDING_TOP,
+//     multiline: multiline ? multiline : null,
+//     dense: dense ? dense : null,
+//     topPosition,
+//     fontSize,
+//     lineHeight,
+//     label,
+//     scale: fontScale,
+//     isAndroid: Platform.OS === 'android',
+//     styles: StyleSheet.flatten(
+//       dense ? styles.inputOutlinedDense : styles.inputOutlined
+//     ) as Padding,
+//   };
 
-  const pad = calculatePadding(paddingSettings);
+//   const pad = calculatePadding(paddingSettings);
 
-  const paddingOut = adjustPaddingOut({ ...paddingSettings, pad });
+//   const paddingOut = adjustPaddingOut({ ...paddingSettings, pad });
 
   const baseLabelTranslateY =
     -labelHalfHeight - (topPosition + OUTLINE_MINIMIZED_LABEL_Y_OFFSET);
@@ -320,7 +320,7 @@ const TextInputOutlined = ({
               !multiline || (multiline && height)
                 ? { height: inputHeight }
                 : {},
-              paddingOut,
+              //paddingOut,
               {
                 ...font,
                 fontSize,
